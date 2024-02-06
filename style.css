@@ -1,0 +1,287 @@
+/* *{margin: 0;padding: 0;box-sizing: border-box;}
+.span {color: #2196F3;}
+footer>a {color: #000000;}
+header>a {color: #000000;}
+footer { background-color:#2F303A;} 
+footer>p {color: white;}
+footer>ul {color: rgba( #FFFFFF99 ) ;}
+.section {background-color:#2F303A;}
+.nav {color: #000000;}
+.logo {
+    font-family: Raleway;
+    
+}
+body {
+    font-family: Roboto;
+    
+}
+.header {
+    text-decoration: none;
+}
+button {
+    background-color: #2196F3; 
+    border: 0px;
+    width: 216px;
+    height: 50px;
+    font-size: 16px;
+}
+.section {
+width: 1600px;
+height: 600px;
+}
+li h1 {
+    color: white;
+}
+li p {
+   color:  #757575;
+   font-size: 14px;
+}
+footer {
+    width: 1600px;
+    height: 252px;
+  
+}
+info { 
+   color:  rgba(255, 255, 255, 0.60);
+} */
+/* глобальний бокссайзінг */
+/* https://textbook.edu.goit.global/html-css-a7u5xv/v1/uk/docs/lesson-05/box-model?_highlight=%D0%B3%D0%BB%D0%BE#%D0%B3%D0%BB%D0%BE%D0%B1%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9-border-box
+
+ горизонтальне центрування
+ https://textbook.edu.goit.global/html-css-a7u5xv/v1/uk/docs/lesson-05/box-types#%D0%B3%D0%BE%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D0%B5-%D1%86%D0%B5%D0%BD%D1%82%D1%80%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-%D0%B1%D0%BB%D0%BE%D0%BA%D0%BE%D0%B2%D0%B8%D1%85-%D0%B5%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%96%D0%B2 */
+/* ховер  */
+/* https://textbook.edu.goit.global/html-css-a7u5xv/v1/uk/docs/lesson-03/pseudo-classes?_highlight=ho#%D0%BF%D1%81%D0%B5%D0%B2%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D1%81-hover */
+ /* лайн хейт */
+ /* https://textbook.edu.goit.global/html-css-a7u5xv/v1/uk/docs/lesson-04/decoration/?_highlight=line#%D0%B2%D0%BB%D0%B0%D1%81%D1%82%D0%B8%D0%B2%D1%96%D1%81%D1%82%D1%8C-line-height */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  /* width: 100%;
+  height: auto; */
+}
+
+a {
+  text-decoration: none;
+  color:currentColor;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+    font-family: Roboto;
+    line-height: normal;
+    
+}
+footer {
+    background-color: #2F303A;
+    
+}
+
+.logo {
+    color: #000000;
+font-family: Raleway;
+font-size: 26px; 
+font-weight: 700;
+letter-spacing: 0.78px;
+}
+
+.span {
+    color: #000;
+}
+
+.nav-list{
+color: #212121;
+font-size: 14px;
+font-weight: 500;
+letter-spacing: 0.28px;
+}
+.nav {
+    display: inline;
+}
+.nav-item {
+    display: inline;
+}
+.nav-item:hover {
+    color: #2196F3;
+}
+.hero-title {
+    color: #FFF;
+text-align: center;
+font-size: 44px;
+font-weight: 900;
+line-height: 1.36; /* 136.364% */
+letter-spacing: 2.64px;
+text-transform: uppercase;
+/* padding-bottom: 280px;
+padding-top: 200px;
+padding-right: 452px;
+padding-left: 452px; */
+margin-bottom: 50px;
+}
+.hero {
+    background-color:  #2F303A;
+    padding: 200px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero_btn {
+    color: #FFF;
+text-align: center;
+font-size: 16px;
+font-weight: 700;
+line-height: 1.87; /* 187.5% */
+letter-spacing: 0.96px;
+border-radius: 4px;
+background: #188CE8;  
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+}
+.work-item {
+    display: inline;
+}
+.work-title {
+    color: #212121;
+font-size: 14px;
+font-weight: 700;
+letter-spacing: 0.42px;
+text-transform: uppercase
+}
+.work-text {
+    color: #757575;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71; /* 171.429% */
+letter-spacing: 0.42px;
+}
+.work-list {
+   padding-bottom: 94px;
+padding-top: 94px;
+}
+.work {
+    display:flex;
+    justify-content: center;
+}
+.future-title { 
+    color: #212121;
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+letter-spacing: 1.08px;
+margin-bottom: 50px;
+}
+.future-item {
+    width: 370px;
+height: 294px;
+flex-shrink: 0;
+margin-right: 30px;
+}
+.future-list {
+    padding-bottom: 94px;
+    display: flex;
+}
+
+.team-title {
+font-size: 36px;
+font-weight: 700;
+line-height: 42px;
+letter-spacing: 0.03em;
+text-align: center;
+}
+.team-title-2  {
+    color: #212121;
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+letter-spacing: 0.48px;
+}
+.team-text {
+    color: #757575;
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+letter-spacing: 0.48px;
+}
+.team-item  {
+    margin-right: 30px;
+    padding-bottom: 34px;
+    padding-top: 50px;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    /* padding: 0 15px; */
+}
+.team-item:last-child {
+    margin-right: 0px;
+}
+.team-item img {
+    margin-bottom: 30px;
+}
+.team-item h3 {
+    margin-bottom: 10px;
+}
+.team-list {
+    display: flex;
+    padding-bottom: 94px;
+}
+.footerlogo {
+    color: #ffffff;
+font-family: Raleway;
+font-size: 26px;
+font-weight: 700;
+letter-spacing: 0.78px;
+
+}
+.span {
+   color: #2196F3;
+font-family: Raleway;
+font-size: 26px;
+font-weight: 700;
+letter-spacing: 0.78px; 
+}
+.info-link {
+    color: #000000;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71; /* 171.429% */
+letter-spacing: 0.42px;
+}
+.info-item {
+    color: rgba(0, 0, 0, 0.6);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71; /* 171.429% */
+letter-spacing: 0.42px;
+} 
+
+
+.nav {
+    display: flex;
+}
+.contact-list {
+    display: flex;
+}
